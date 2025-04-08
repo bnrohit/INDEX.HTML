@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #FFFFFF;
+    background-color: #1A2526;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #1A2526;
+    color: #FFFFFF;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #F5A623;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav a:hover {
+    color: #F5A623;
+    transition: color 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #1A2526, #2E3B3E);
+    text-align: center;
+    padding: 120px 20px;
+    margin-top: 70px;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #D3D3D3;
+}
+
+.hero button {
+    background-color: #F5A623;
+    color: #1A2526;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #FFB84D;
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #2E3B3E;
+}
+
+.about h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #F5A623;
+}
+
+.about p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #D3D3D3;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    background-color: #1A2526;
+    text-align: center;
+}
+
+.services h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #F5A623;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #2E3B3E;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.service-item p {
+    color: #D3D3D3;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #2E3B3E;
+}
+
+.contact h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #F5A623;
+}
+
+.contact p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #D3D3D3;
+}
+
+.contact a {
+    color: #F5A623;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #F5A623;
+    border-radius: 5px;
+    background-color: #1A2526;
+    color: #FFFFFF;
+}
+
+.contact textarea {
+    height: 100px;
+}
+
+.contact button {
+    background-color: #F5A623;
+    color: #1A2526;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #FFB84D;
+}
+
+/* Footer */
+footer {
+    background-color: #1A2526;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #F5A623;
+}
+
+footer p {
+    font-size: 14px;
+}
